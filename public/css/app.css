@@ -1,0 +1,665 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #8080800f;
+   
+}
+
+/* Home page */
+.home-header{
+    position: fixed;
+    z-index: 1;
+    margin: 1rem;
+    width:100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.backdrop-image{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0
+}
+
+.home-body{
+    position: fixed;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.backdrop-image img{
+    height:100%;
+    width: 100%;
+}
+
+.home-actions{
+    margin:2rem 0rem;
+}
+
+.home-actions a{
+    margin: 0rem 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+a.home-signin{
+    background: #454545;
+    border-radius: 0.8rem;
+}
+
+a.home-signin:hover{
+    background: black;
+}
+
+.form-main-container{
+ display: flex;
+ justify-content: center;
+}
+
+.form-container{
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.form{
+    margin: 1rem 0rem;
+    box-shadow: 0rem 0rem 0.5rem purple;
+    background: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 18rem;
+    justify-content: space-around;
+}
+
+.form-create_profile{
+    height: 28rem;
+    width: fit-content;
+}
+
+.form-forgot_password{
+    height: 13rem;
+}
+
+.form-profile_update{
+    height: 25rem;
+    width: fit-content;
+}
+
+.form-profile_admin{
+    height: 45rem;
+    width: fit-content;
+}
+
+.form-change_password{
+    width: fit-content;
+    height: 15rem;
+}
+
+.form-invite{
+    display:none;
+    position: absolute;
+    left: 45%;
+    height: 15rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-forgot_password small{
+    color: purple;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container small{
+    color: red;
+}
+
+.form input{
+    padding: 0.6rem;
+    border-bottom: 0.1rem solid black;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+
+.form-create_profile input{
+    border:0.1rem solid black;
+}
+
+.form input:focus{
+    outline: none;
+    border: 0.1rem solid purple;
+}
+
+.checkbox{
+    display: flex;
+}
+
+.checkbox input[type='checkbox'] {
+    margin-right:1rem;
+}
+
+.checkbox p{
+    font-size: 0.8rem;
+}
+
+.btn{
+    padding: 0.6rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: purple;
+    text-decoration: none;
+}
+
+.btn-del{
+    background: crimson;
+}
+
+.form a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: purple;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.profile-names{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-names .input-container{
+    width: 45%;
+}
+
+select{
+    padding: 0.6rem;
+}
+
+.form-create_profile input[type='file']{
+    border: none;
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100vh;
+    width: 20%;
+    background: #800080bd;
+}
+
+.nav-main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.nav-profile-logout{
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.btn-logout{
+    background-color: rebeccapurple;
+}
+
+.main-nav-links{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    height: 80%;
+    overflow-y:scroll;
+}
+
+.nav-link-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem 0rem;
+    /* width:50%; */
+}
+
+.nav-link-container h4{
+    padding: 0.3rem;
+    border-bottom: 0.3rem solid purple;
+    margin: 0.5rem 0rem;
+    width: fit-content;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.nav-links a{
+    margin: 0.2rem 0rem;
+    padding: 0.3rem;
+    background: none;
+    transition: 0.2s ease;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.nav-links a:hover{
+    background: rebeccapurple;
+    transition: 0.5s ease;
+    color: #fff;
+}
+
+.main-nav-links::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+.main-nav-links::-webkit-scrollbar-thumb {
+    background: mediumorchid;
+    /* border-radius: 2rem; */
+}
+
+.main-nav-links::-webkit-scrollbar-thumb:hover {
+    background: purple;
+}
+
+.main-nav-links::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+.main-nav-links::-webkit-scrollbar-track:hover {
+    background: rgb(233, 229, 229);
+}
+
+/* TABLE */
+
+.dashboard-bills{
+    margin:2rem 0rem;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+h5#table-date {
+    margin-top: 2rem;
+    width: 90%;
+    box-shadow: 0rem 0rem 0.1rem 0rem rgb(255, 3, 255);
+    padding: 0.5rem;
+}
+
+.table-row {
+    display: table;
+    width: 90%;
+    color: gray;
+    background: transparent;
+    box-shadow: 0rem 0.1rem 0.3rem 0rem rgb(238, 218, 238);
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+
+.table-head {
+    background: linear-gradient(purple, rgb(255, 3, 255));
+    color: white;
+}
+
+.table-head .table-cell {
+    border: none;
+}
+.table-cell {
+    display: table-cell;
+    width: 15%;
+    text-align: center;
+    border-right: 0.1rem solid purple;
+    padding: 0.5rem 0rem;
+}
+
+.view-more{
+    display: flex;
+    justify-content: flex-end;
+    margin:1rem 0rem;
+    width: 90%;
+}
+
+.account-table-actions{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: 1rem 0rem
+}
+
+.view-more a{
+    /* margin-right: 6rem; */
+    text-decoration: none;
+}
+
+/* notification */
+.notification-container{
+    position: fixed;
+    z-index: 1;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin:1rem 0rem;
+}
+
+.latest-payment{
+    justify-content: center;
+    margin-top: 6rem;
+    width:70%;
+}
+
+.notification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 0.8rem;
+    background: purple;
+    color: white;
+}
+
+.dashboard-container{
+    /* position: fixed; */
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard-image_box{
+    height:100%;
+}
+
+.dashboard-image_box img{
+    height:100%;
+    width:100%;
+}
+
+.btn-invite{
+    text-decoration: none;
+    width: fit-content;
+}
+
+/* Activity */
+.dashboard-activity{
+    margin:1rem 0rem;
+}
+
+.dashboard-activity h3{
+    margin: 1rem 0rem;
+}
+
+.pie-charts{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0rem;
+}
+
+.pie-chart{
+    display: flex;
+    margin: 1rem 0rem;
+}
+
+.pie-chart-container{
+    /* width: 40%; */
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile */
+.profile-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+    width: 90%;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+}
+
+.form-profile{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.profile-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-item input{
+    border: 0.1rem solid black;
+}
+
+.profile-item label{
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.item-gender{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.item-select{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tips-container{
+    margin: 2rem;
+    box-shadow: 0rem 0rem 0.2rem;
+}
+
+.tips-container p{
+    padding: 1rem;
+}
+
+/* FAQ'S */
+
+.search-bar{
+    margin: 1rem 0rem;
+}
+
+.search-bar input{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+}
+
+.search-bar input:focus{
+    border: 0.1rem solid purple;
+    outline: none;
+}
+
+.faqs-container{
+    margin: 2rem;
+    box-shadow: 0rem 0rem 0.2rem;
+    padding: 0rem 2rem;
+}
+
+.faqs-container ol{
+    padding: 1rem 0rem;
+}
+
+.faqs-container ol li{
+    padding: 1rem 0rem
+}
+
+/* Bills */
+
+.bill-name{
+    margin: 1rem;
+    padding: 0.3rem 0rem;
+    border-bottom: 0.3rem solid purple;
+    width: fit-content;
+}
+
+.bill-header{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.current-bill{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.bills-container{
+    box-shadow: 0rem 0rem 0.1rem;
+    margin: 1rem;
+}
+
+.bill-update{
+    display: flex;
+    margin: 0rem 1rem;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.bill{
+    padding: 1rem;
+}
+
+.bill h4{
+    padding: 0.3rem 0rem;
+    border-bottom: 0.3rem solid #454545;
+    width: fit-content;
+}
+
+.bill-amounts{
+    display: flex;
+    margin: 3rem;
+    justify-content: space-around;
+}
+
+.bill-amounts div{
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bill-amounts div span{
+    font-size: 2rem
+}
+
+/* Backdrop */
+
+.backdrop{
+    position: fixed;
+    height: 100vh;
+    background: rgba(0,0,0,0.2);
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.backdrop-home{
+    display: block;
+}
+
+/* pop up notifications */
+.popup{
+    position: fixed;
+    top: 5%;
+    right: 1%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0rem 0rem 0.3rem purple;
+    background: white;
+    width: 30%;
+    transition: 0.5s ease;
+    z-index: 100;
+}
+
+.popup-close{
+    position: fixed;
+    top: -20%;
+    right: 1%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background: white;
+    width: 30%;
+    box-shadow: 0rem 0rem 0.3rem purple;
+    transition: 0.5s ease;
+}
+
+.popup-container{
+    padding: 1rem;
+}
+
+.popup-container p{
+    color: #454545;
+}
+
+/* Text area */
+
+textarea{
+    width: 15rem;
+    height: 5rem;
+    resize: none;
+    padding:0.5rem;
+}
+
+/* Home page */
+
+/* form background images */
+
+.form-bgimg{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+}

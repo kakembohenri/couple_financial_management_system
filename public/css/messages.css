@@ -1,0 +1,72 @@
+.main-inbox-container{
+    position: relative;
+    left: 50%;
+}
+
+.main-messages-container{
+    width: 25rem;
+    height: 25rem;
+    border: 1px solid;
+    overflow-y: auto;
+}
+
+.messages-container{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sender-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sender{ 
+    max-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 0.5rem;
+    background: mediumpurple;
+}
+
+.sender span{
+    margin:1rem;
+}
+
+.reciever-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reciever{
+    display: flex;
+    flex-direction: column;
+    background: bisque;
+    max-width: 10rem;
+    border: 1px solid;
+    padding: 0.5rem;
+
+}
+
+.reciever span{
+    margin: 0.5rem 0rem;
+}
+
+.form-send{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0rem;
+    justify-content: space-between;
+}
+
+.form-send input{
+    padding: 1rem;
+    width: 80%;
+}
+
+.btn{
+    height: fit-content;
+}

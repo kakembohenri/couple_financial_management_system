@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.dashboard-main-container{
+    width: 100%;
+    margin-left: 2rem;
+    /* margin-top: 2rem; */
+    height:100vh;
+    overflow-y: auto;
+}
+
+.dashboard-home{
+    margin:0rem;
+}

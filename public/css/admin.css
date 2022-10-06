@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+nav{
+    display: flex;
+    background: #800080bd;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.nav-main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main-nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow-y:auto;
+    height: fit-content;
+    width: 70%;
+}
+
+.main-nav-links a{
+    color: black;
+    text-decoration: none;
+}
+
+.main-nav-links a:hover{
+    text-decoration: underline;
+}
+
+/* Admin dashboard */
+
+.admin-main-container{
+    margin: 1rem;
+}
+.admin-dashboard h3{
+    padding: 0.4rem 0rem;
+    margin: 1rem 0rem;
+    border-bottom: 0.4rem solid purple;
+    width: fit-content;
+}
+
+.dashboard-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0rem;
+}
+
+.dashboard-card{
+    box-shadow: 0rem 0rem 0.1rem;
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+    width: 15rem
+}
+
+.stat-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.img-box{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.img-box img{
+    height: 50%;
+}
